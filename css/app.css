@@ -378,6 +378,7 @@ header {
     box-shadow: 0 0 5px #DCDCDC;
     border-radius: 50px;
     overflow: hidden;
+    margin: 10px;
 }
 
 .colone-activite {
@@ -470,7 +471,7 @@ footer ul li {
     display: none;
 }
 
-@media screen and (max-width: 964px)
+@media screen and (max-width: 1024px)
 {
     .titre-recherche {
         margin-bottom: 10px;
@@ -481,7 +482,7 @@ footer ul li {
     }
 
     .recherche-champ {
-        margin: 15px 0;
+        margin: 40px 0;
     }
 
     .icon-champ {
@@ -509,6 +510,10 @@ footer ul li {
         flex-direction: column; 
     }
 
+    .filtre {
+        margin: 10px;
+    }
+
     .titre-filtres {
     }
 
@@ -532,6 +537,14 @@ footer ul li {
         justify-content: center;
     }
 
+    .offre-type1 {
+        width: 5000px;
+    }
+
+    .offre-type2 {
+        width: 5000px;
+    }
+
     .hebergement-populaire {
         margin: 2% 0%;
         border-radius: 0;
@@ -542,10 +555,6 @@ footer ul li {
         border-radius: 0;
         padding-top: 20px;
         background: #FFF;
-    }
-
-    .offre-type1 {
-        width: 500px;
     }
     
     .list-activite {
