@@ -72,7 +72,6 @@ header {
     margin-top: 1%;
     display: flex;
 }
-
 .icon-champ {
     font-size: 2em;
     padding: 0.5% 1% 0 1%;
@@ -195,7 +194,7 @@ header {
 
 .hebergement-marseille {
     background-color: #F2F2F2;
-    margin: 4%;
+    margin: 1% 4% 4% 2%;
     font-weight: bold;
     flex: 6;
     border-radius: 50px;
@@ -205,11 +204,12 @@ header {
 .hebergement-marseille h2 {
     font-weight: bold;
     padding: 4% 0 0 4%;
+    margin-bottom: 15px;
 }
 
 .hebergement-populaire {
     background-color: #F2F2F2;
-    margin: 4% 4% 4% 0;
+    margin: 1% 4% 4% 2%;
     border-radius: 50px;
     font-weight: bold;
     padding: 1.8%;
@@ -232,6 +232,13 @@ header {
     justify-content: space-between;
 }
 
+.img-offre-p {
+    border-radius: 15px 0 0 15px;
+    height: 140px;
+    width: 150px;
+    margin: 0 -10px 0 -20px;
+}
+
 .offre-type2 {
     display: flex;
     background-color: #FFF;
@@ -239,6 +246,7 @@ header {
     border-radius: 15px;
     position: relative;
     margin: 25px 0;
+    overflow: hidden;
 }
 
 .img-populaire {
@@ -267,18 +275,6 @@ header {
     font-family: Raleway, Serif;
 }
 
-.emilie {
-    background-image: url("/OC-Projet2-Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-}
-
-.febrian {
-    background-image: url("/OC-Projet2-Reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-}
-
-.creative {
-    background-image: url("/OC-Projet2-Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-}
-
 .fa-chart-line {
     font-size: 2em;
     margin-top: auto;
@@ -295,10 +291,16 @@ header {
     background-color: #FFF;
     border: 5px solid white;
     border-radius: 15px;
-    margin: 2%;
+    margin: 10px;
     overflow: hidden;
-    width: 300px;
+    width: 320px;
     box-shadow: 0px 0px 5px #DCDCDC;
+}
+
+.img-offre-m {
+    width: 430px;
+    height: 200px;
+    margin: -50px -50px -50px -100px;
 }
 
 .img-offre-marseille {
@@ -309,20 +311,8 @@ header {
     height: 150px;
 }
 
-.marcus {
-    background-image: url("/OC-Projet2-Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-}
-
-.fred {
-    background-image: url("/OC-Projet2-Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-}
-
-.nicrate {
-    background-image: url("/OC-Projet2-Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-}
-
 .offre-type1 h4 {
-    margin-top: 10px;
+    margin-top: 60px;
     font-family: Raleway, Serif;
     padding-left: 20px;
     font-weight: bold;
@@ -379,6 +369,7 @@ header {
     border-radius: 50px;
     overflow: hidden;
     margin: 10px;
+    width: 400px;
 }
 
 .colone-activite {
@@ -411,6 +402,7 @@ header {
     font-family: Raleway, serif;
     font-size: 1.2em;
     font-weight: bold;
+    margin-left: 10px;
 }
 
 .vieux-port {
@@ -549,7 +541,7 @@ footer ul li {
 
     .filtres {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .filtre {
@@ -562,7 +554,7 @@ footer ul li {
     .conteneur-filtres{
         display: flex;
         flex-wrap: wrap;
-        justify-content: flex-start;   
+        justify-content: flex-start;
     }
 
     .fa-info {
@@ -598,7 +590,7 @@ footer ul li {
         padding-top: 20px;
         background: #FFF;
     }
-    
+
     .list-activite {
         display: flex;
         flex-direction: column;
