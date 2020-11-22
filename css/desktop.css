@@ -10,6 +10,38 @@ header {
     justify-content: space-between;
 }
 
+
+.vieux-port {
+    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+    height: 500px;
+}
+
+.fort-pomegues {
+    height: 250px;
+    min-width: 300px;
+    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+}
+
+.iles-frioul {
+    height: 150px;
+    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+
+.parc-calanques {
+    height: 500px;
+    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+}
+
+.notre-dame {
+    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+    height: 200px;
+}
+
+.parc-longchamps {
+    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+    height: 200px;
+}
+
 .logo-reservia {
     height: 50px;
     margin: 20% 50%;
@@ -72,6 +104,7 @@ header {
     margin-top: 1%;
     display: flex;
 }
+
 .icon-champ {
     font-size: 2em;
     padding: 0.5% 1% 0 1%;
@@ -354,7 +387,6 @@ header {
 .list-activite {
     display: flex;
     justify-content: space-between;
-    max-height: 650px;
     margin: 2% 0;
 }
 
@@ -405,37 +437,6 @@ header {
     margin-left: 10px;
 }
 
-.vieux-port {
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    height: 500px;
-}
-
-.fort-pomegues {
-    height: 250px;
-    min-width: 300px;
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-}
-
-.iles-frioul {
-    height: 150px;
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-}
-
-.parc-calanques {
-    height: 500px;
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-}
-
-.notre-dame {
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    height: 200px;
-}
-
-.parc-longchamps {
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    height: 200px;
-}
-
 footer {
     display: flex;
     padding: 60px;
@@ -465,157 +466,4 @@ footer ul li {
 
 .mobile-inscription {
     display: none;
-}
-
-@media screen and (max-width: 1024px)
-{
-    header {
-        display: inline-block;
-    }
-
-    .header-mobile {
-        display: flex;
-        justify-content: space-between;
-        font-family: Raleway;
-        margin: 20px 0;
-    }
-
-    .mobile-inscription {
-        display: initial;
-        align-self: center;
-        text-decoration: none;
-    }
-
-    .header-mobile a{
-        margin-right: 20px;
-    }
-
-    .logo-reservia {
-        margin: 0;
-    }
-
-    .inscription {
-        display: none;
-    }
-
-    .conteneur-lien {
-        width: 1000px;
-    }
-
-    .conteneur-lien a{
-        width: 50%;
-        text-align: center;
-    }
-
-    .titre-recherche {
-        margin-bottom: 10px;
-    }
-
-    .sous-titre-recherche {
-        margin-bottom: 10px;
-    }
-
-    .recherche-champ {
-        margin: 40px 0;
-    }
-
-    .icon-champ {
-        font-size: 1em;
-        padding: 3%;
-        background-color: #F2F2F2;
-        border-radius: 15px 0 0 15px;
-    }
-
-    .recherche-text {
-        display: none;
-    }
-
-    .recherche-button {
-        border-radius: 10px;
-    }
-
-    .fa-search {
-        display: inline;
-        padding: 10px;
-    }
-
-    .filtres {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .filtre {
-        margin: 10px;
-    }
-
-    .titre-filtres {
-    }
-
-    .conteneur-filtres{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-    }
-
-    .fa-info {
-        margin-right: 10px
-    }
-
-    .info {
-        font-size: 1.2em;
-    }
-
-    .hebergement {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    .offre-type1 {
-        width: 5000px;
-    }
-
-    .offre-type2 {
-        width: 5000px;
-    }
-
-    .hebergement-populaire {
-        margin: 2% 0%;
-        border-radius: 0;
-    }
-
-    .hebergement-marseille {
-        margin: 0;
-        border-radius: 0;
-        padding-top: 20px;
-        background: #FFF;
-    }
-
-    .list-activite {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 540px;
-    }
-
-    .conteneur-activite {
-        margin: 10px 0;
-        overflow: initial;
-    }
-
-    .active {
-        display: block;
-    }
-
-    .img-activite {
-        width: 1000px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer ul li {
-        white-space: nowrap;
-    }
 }
