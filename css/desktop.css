@@ -10,38 +10,6 @@ header {
     justify-content: space-between;
 }
 
-
-.vieux-port {
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    height: 500px;
-}
-
-.fort-pomegues {
-    height: 250px;
-    min-width: 300px;
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-}
-
-.iles-frioul {
-    height: 150px;
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-}
-
-.parc-calanques {
-    height: 500px;
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-}
-
-.notre-dame {
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    height: 200px;
-}
-
-.parc-longchamps {
-    background-image: url("/OC-Projet2-Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    height: 200px;
-}
-
 .logo-reservia {
     height: 50px;
     margin: 20% 50%;
@@ -466,4 +434,351 @@ footer ul li {
 
 .mobile-inscription {
     display: none;
+}
+
+@media screen and (max-width: 768px)
+{
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-mobile {
+        display: flex;
+        justify-content: space-around;
+        vertical-align: center;
+        padding: 15px 0;
+    }
+
+    .logo-reservia {
+        margin: 0 0 0 20px;
+        padding: 0;
+    }
+
+    .mobile-inscription {
+        display: initial;
+        margin: auto;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: Raleway, serif;
+    }
+
+    .conteneur-lien {
+        padding: 15px 0;
+    }
+
+    .conteneur-lien a:hover {
+        border-top: none;
+    }
+
+    .mob-link {
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    .mob-link:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .active {
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .inscription {
+        display: none;
+    }
+
+    .mob-link {
+        width: 50%;
+    }
+
+    .titre-recherche {
+        margin-bottom: 10px;
+    }
+
+    .sous-titre-recherche {
+        margin-bottom: 10px;
+    }
+
+    .recherche-champ {
+        margin: 30px 0;
+        width: 370px;
+        border-right: none;
+    }
+
+    .icon-champ {
+        font-size: 1em;
+        padding: 20px 20px;
+        background-color: #F2F2F2;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .champs-de-recherche {
+        border: none;
+        border: 2px solid #F2F2F2;
+        border-left: none;
+        border-right: none;
+        padding-left: 20px;
+    }
+
+    .recherche-button {
+        position: relative;
+        right: 10px;
+        border-radius: 10px;
+    }
+
+    .recherche-text {
+        display: none;
+    }
+
+    .fa-search {
+        display: inline;
+        padding: 10px;
+    }
+
+    .filtres {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .filtre {
+        margin: 10px;
+    }
+
+    .titre-filtres {
+    }
+
+    .conteneur-filtres{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .fa-info {
+        margin-right: 10px
+    }
+
+    .info {
+        font-size: 1.2em;
+    }
+
+    .hebergement {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .hebergement-populaire {
+        margin: 2% 0%;
+        border-radius: 0;
+    }
+
+    .hebergement-marseille {
+        margin: 0;
+        border-radius: 0;
+        padding-top: 20px;
+        background: #FFF;
+    }
+
+    .offre-type1 {
+        width: 5000px;
+    }
+
+    .list-activite {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .img-activite {
+        overflow: hidden;
+        border-radius: 30px 30px 0 0;
+        max-height: 350px;
+    }
+
+    .img-activite img{
+        width: 450px;
+        object-fit: cover;
+        max-height: 200px;
+    }
+
+    .conteneur-activite {
+        margin: 10px 0;
+    }
+
+    .conteneur-activite {
+        width: 395px;
+        height: 265px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer ul li {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 768px)  and (max-width: 1000px) {
+    body {
+        display: inline-block;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-mobile {
+        display: flex;
+        justify-content: space-around;
+        vertical-align: center;
+        padding: 15px 0;
+    }
+
+    .logo-reservia {
+        margin: 0 0 0 20px;
+        padding: 0;
+    }
+
+    .mobile-inscription {
+        display: initial;
+        margin: auto;
+        text-decoration: none;
+        margin-right: 20px;
+        font-family: Raleway, serif;
+    }
+
+    .conteneur-lien {
+        padding: 15px 0;
+    }
+
+    .conteneur-lien a:hover {
+        border-top: none;
+    }
+
+    .mob-link {
+        border-top: none;
+        border-bottom: 3px solid #F2F2F2;
+        flex:1;
+        text-align: center;
+    }
+
+    .mob-link:hover {
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .active {
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .inscription {
+        display: none;
+    }
+
+    .mob-link {
+        width: 50%;
+    }
+
+    .titre-recherche {
+        margin-bottom: 10px;
+    }
+
+    .sous-titre-recherche {
+        margin-bottom: 10px;
+    }
+
+    .recherche-champ {
+        margin: 30px 0;
+        width: 370px;
+        border-right: none;
+    }
+
+    .icon-champ {
+        font-size: 1em;
+        padding: 20px 20px;
+        background-color: #F2F2F2;
+        border-radius: 15px 0 0 15px;
+    }
+
+    .champs-de-recherche {
+        border: none;
+        border: 2px solid #F2F2F2;
+        border-left: none;
+        border-right: none;
+        padding-left: 20px;
+    }
+
+    .recherche-button {
+        position: relative;
+        right: 10px;
+        border-radius: 10px;
+    }
+
+    .recherche-text {
+        display: none;
+    }
+
+    .fa-search {
+        display: inline;
+        padding: 10px;
+    }
+
+    .filtres {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .filtre {
+        margin: 10px;
+    }
+
+    .titre-filtres {
+    }
+
+    .conteneur-filtres{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .fa-info {
+        margin-right: 10px
+    }
+
+    .info {
+        font-size: 1.2em;
+    }
+
+    .hebergement {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .offre-type1 {
+        width: 450px;
+    }
+
+    .cont-img1 img {
+        margin: 0;
+        width: 450px;
+        object-position: center;
+        object-fit: cover;
+    }
+
+    .offre-type1 h4 {
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+
+    .offre-type1 p {
+        font-size: 1.3em;
+    }
 }
