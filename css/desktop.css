@@ -21,7 +21,7 @@ header {
 }
 
 .conteneur-lien a {
-    padding: 2% 70px 20px 40px;
+    padding: 30px 70px 20px 40px;
     text-decoration: none;
     font-family: 'Raleway', serif;
     font-size: 1.2em;
@@ -472,8 +472,13 @@ footer ul li {
     display: none;
 }
 
+.big-img {
+    margin-top: -650px;
+}
 
-@media screen and (min-width: 300px) and (max-width: 724px) {
+@media screen and (min-width: 300px) and (max-width: 724px) and (-webkit-min-device-pixel-ratio:0) {
+
+    body { width: fit-content; }
 
     header {
         display: flex;
@@ -636,6 +641,11 @@ footer ul li {
         width: 750px;
     }
 
+    .activite {
+        background: red;
+        height: 1500px;
+    }
+
     .list-activite {
         display: flex;
         flex-direction: column;
@@ -673,7 +683,9 @@ footer ul li {
     }
 }
 
-@media screen and (min-width: 300px) and (max-width: 892px) {
+@media screen and (min-width: 300px) and (max-width: 892px) and (-webkit-min-device-pixel-ratio:0) {
+    body { width: fit-content}
+
     .conteneur-activite {
         height: 310px;
         width: 780px;
@@ -695,7 +707,11 @@ footer ul li {
     }
 }
 
-@media screen and (min-width: 724px) and (max-width: 1350px)    {
+@media screen and (min-width: 724px) and (max-width: 1350px) and (-webkit-min-device-pixel-ratio:0) {
+
+    body {
+        width: fit-content;
+    }
 
     header {
         display: flex;
@@ -869,6 +885,10 @@ footer ul li {
         width: 750px;
     }
 
+    .activite {
+        height: 1500px;
+    }
+
     .list-activite {
         display: flex;
         justify-content: center;
@@ -891,7 +911,7 @@ footer ul li {
     }
 }
 
-@media screen and (min-width: 1350px) and (max-width: 1880px) {
+@media screen and (min-width: 1350px) and (max-width: 1880px) and (-webkit-min-device-pixel-ratio:0) {
     .conteneur-activite {
         width: 360px;
     }
