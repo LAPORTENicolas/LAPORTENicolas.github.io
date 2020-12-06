@@ -478,8 +478,6 @@ footer ul li {
 
 @media screen and (min-width: 300px) and (max-width: 724px) and (-webkit-min-device-pixel-ratio:0) {
 
-    body { width: fit-content; }
-
     header {
         display: flex;
         flex-direction: column;
@@ -683,7 +681,6 @@ footer ul li {
 }
 
 @media screen and (min-width: 300px) and (max-width: 892px) and (-webkit-min-device-pixel-ratio:0) {
-    body { width: fit-content}
 
     .conteneur-activite {
         height: 260px;
@@ -711,10 +708,6 @@ footer ul li {
 }
 
 @media screen and (min-width: 724px) and (max-width: 1350px) and (-webkit-min-device-pixel-ratio:0) {
-
-    body {
-        width: fit-content;
-    }
 
     header {
         display: flex;
