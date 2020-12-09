@@ -2,28 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Reservia, est un site d'annonce de logements pour vos vacances ou week-end." />
     <script src="https://kit.fontawesome.com/01d4fad49e.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="https://www.toutelasignaletique.com/21621-large_default/lettre-r-en-aluminium-decoupe-coloris-et-dimensions-au-choix.jpg">
     <link rel="stylesheet" type="text/css" href="css/desktop.css">
-    <title>Resrvia - Accueil</title>
+    <title>Reservia - Accueil</title>
 </head>
 <body>
-    <header>
-        <div class="header-mobile">
-            <a href="#">
-                <img class="logo-reservia" src="images/logo/Reservia@3x.png" alt="logo Reservia"/>
-            </a>
+<header>
+    <div class="header-mobile">
+        <a href="#">
+            <img class="logo-reservia" src="images/logo/Reservia@3x.png" alt="logo Reservia"/>
+        </a>
 
-            <a href="#" class="bleu lien-nav mobile-inscription"><strong>S'inscrire</strong></a>
-        </div>
-        <nav class="conteneur-lien">
-            <a href="#" class="bleu active mob-link">Hébergements</a>
-            <a href="#" class="act lien-nav mob-link">Activités</a>
-            <a href="#" class="bleu lien-nav inscription"><strong>S'inscrire</strong></a>
-        </nav>
+        <a href="#" class="bleu lien-nav mobile-inscription"><strong>S'inscrire</strong></a>
+    </div>
+    <nav class="conteneur-lien">
+        <a href="#" class="bleu active mob-link">Hébergements</a>
+        <a href="#" class="act lien-nav mob-link">Activités</a>
+        <a href="#" class="bleu lien-nav inscription"><strong>S'inscrire</strong></a>
+    </nav>
 
-    </header>
+</header>
 
+<main>
     <section class="recherche">
         <h1 class="titre-recherche">Trouvez votre hébergements pour des vacances de rêve</h1>
         <h2 class="sous-titre-recherche">En plein centre ville ou en pleine nature</h2>
@@ -65,9 +69,9 @@
 
     <p class="info"><i class="fas fa-info"></i> Plus de 500 logements sont disponible dans cette ville</p>
 
-    <main class="hebergement">
+    <section class="hebergement">
 
-        <section class="hebergement-marseille">
+        <div class="hebergement-marseille">
             <h2>Hébergement a Marseille</h2>
 
             <div class="conteneur-offre-marseille">
@@ -126,7 +130,7 @@
                 </article>
             </div>
             <a href="#" class="affiche-plus">Afficher plus</a>
-        </section>
+        </div>
 
         <div class="hebergement-populaire">
             <div class="conteneur-titre-populaire">
@@ -148,7 +152,7 @@
 
                 <div class="offre-type2">
                     <div class="cont-img2">
-                    <img alt="Au_coeur_de_leau" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="img-offre-p">
+                        <img alt="Au_coeur_de_leau" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" class="img-offre-p">
                     </div>
                     <div class="conteneur-text-offre2">
                         <h4>Au coeur de l'eau chambre d'hôtes</h4>
@@ -169,7 +173,7 @@
                 </div>
             </aside>
         </div>
-    </main>
+    </section>
 
     <section class="activite">
         <h2 class="titre-activite">Activités à Marseille</h2>
@@ -182,21 +186,21 @@
                 <p class="titre-activite-div">Vieux Port</p>
             </div>
 
-            <div class="colone-activite">
-                <div class="conteneur-activite conteneur-activite-2">
-                    <div class="img-activite img-activite-margin">
-                        <img alt="fort-pomegues" class="big-img" src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
-                    </div>
-                    <p class="titre-activite-div">Fort de Pomègues</p>
+            <!-- <div class="colone-activite"> !-->
+            <div class="conteneur-activite conteneur-activite-2">
+                <div class="img-activite img-activite-margin">
+                    <img alt="fort-pomegues" class="big-img" src="images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg">
                 </div>
-
-                <div class="conteneur-activite conteneur-activite-3">
-                    <div class="img-activite img-activite-p-margin">
-                        <img alt="iles-frioul" class="big-img" src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
-                    </div>
-                    <p class="titre-activite-div">Îles de Frioul</p>
-                </div>
+                <p class="titre-activite-div">Fort de Pomègues</p>
             </div>
+
+            <div class="conteneur-activite conteneur-activite-3">
+                <div class="img-activite img-activite-p-margin">
+                    <img alt="iles-frioul" class="big-img" src="images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
+                </div>
+                <p class="titre-activite-div">Îles de Frioul</p>
+            </div>
+            <!-- </div> !-->
 
             <div class="conteneur-activite conteneur-activite-1">
                 <div class="img-activite img-activite-g">
@@ -205,43 +209,43 @@
                 <p class="titre-activite-div">Parc National Calanques</p>
             </div>
 
-            <div class="colone-activite">
-                <div class="conteneur-activite conteneur-activite-4">
-                    <div class="img-activite img-activite-m">
-                        <img alt="notre-dame" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
-                    </div>
-                    <p class="titre-activite-div">Notre-Dame-de-la-Garde</p>
+            <!-- <div class="colone-activite"> !-->
+            <div class="conteneur-activite conteneur-activite-4">
+                <div class="img-activite img-activite-m">
+                    <img alt="notre-dame" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg">
                 </div>
-
-                <div class="conteneur-activite conteneur-activite-4">
-                    <div class="img-activite img-activite-m">
-                        <img alt="parc-longchamps" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
-                    </div>
-                    <p class="titre-activite-div">Parc Longchamp</p>
-                </div>
+                <p class="titre-activite-div">Notre-Dame-de-la-Garde</p>
             </div>
+
+            <div class="conteneur-activite conteneur-activite-4">
+                <div class="img-activite img-activite-m">
+                    <img alt="parc-longchamps" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg">
+                </div>
+                <p class="titre-activite-div">Parc Longchamp</p>
+            </div>
+            <!-- </div> !-->
         </div>
     </section>
+</main>
+<footer>
+    <ul>
+        <li class="footer-cat">A propos</li>
+        <li>Fontionnement du site</li>
+        <li>Conditions générales de vente</li>
+        <li>Données et confidentialité</li>
+    </ul>
 
-    <footer>
-        <ul>
-            <li class="footer-cat">A propos</li>
-            <li>Fontionnement du site</li>
-            <li>Conditions générales de vente</li>
-            <li>Données et confidentialité</li>
-        </ul>
+    <ul>
+        <li class="footer-cat">Nos hébergements</li>
+        <li>Charte de qualité</li>
+        <li>Soumettre votre hôtel</li>
+    </ul>
 
-        <ul>
-            <li class="footer-cat">Nos hébergements</li>
-            <li>Charte de qualité</li>
-            <li>Soumettre votre hôtel</li>
-        </ul>
-
-        <ul>
-            <li class="footer-cat">Assistance</li>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-        </ul>
-    </footer>
+    <ul>
+        <li class="footer-cat">Assistance</li>
+        <li>Centre d'aide</li>
+        <li>Nous contacter</li>
+    </ul>
+</footer>
 </body>
 </html>
