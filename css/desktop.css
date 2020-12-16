@@ -289,7 +289,7 @@ main {
 .conteneur-offre-marseille {
     margin: 0 40px 30px 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
@@ -487,7 +487,8 @@ footer ul li {
     margin-top: -650px;
 }
 
-@media screen and (min-width: 425px) and (max-width: 754px) {
+@media screen and (min-width: 320px) and (max-width: 754px) {
+    body { min-width: 380px;}
 
     header {
         display: flex;
@@ -515,10 +516,12 @@ footer ul li {
 
     .conteneur-lien {
         padding: 15px 0;
+        justify-content: center;
     }
 
     .conteneur-lien a {
         text-align: center;
+        font-size: 0.9em;
     }
 
     .conteneur-lien a:hover {
@@ -694,7 +697,7 @@ footer ul li {
     }
 }
 
-@media screen and (min-width: 754px) and (max-width: 1399px)  {
+@media screen and (min-width: 754px) and (max-width: 1024px)  {
 
     header {
         display: flex;
@@ -911,13 +914,17 @@ footer ul li {
     }
 }
 
-@media screen and (min-width: 754px) and (max-width: 1107px) {
+@media screen and (min-width: 754px) and (max-width: 1024px) {
+    .mobile-inscription {
+        margin-right: 45px;
+    }
+
     .list-activite {
         justify-content: center;
     }
 }
 
-@media screen and (min-width: 1108px) and (max-width: 1399px) {
+@media screen and (min-width: 1108px) and (max-width: 1024px) {
     footer {
         flex-direction: unset;
     }
@@ -928,5 +935,18 @@ footer ul li {
 
     .activite {
         height: 620px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    body { min-width: 1190px;}
+
+    footer  ul {
+        margin: 0 200px 0 50px
+    }
+
+    .offre-type1 {
+        margin: 10px 50px;
+        width: 240px;
     }
 }
