@@ -16,6 +16,11 @@ main {
     flex-direction: column;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .logo-reservia {
     height: 50px;
     margin: 20% 50%;
@@ -130,6 +135,14 @@ main {
     border-radius: 100px;
     border-left: none;
     margin: 0 10px;
+    transition: 0.3s;
+}
+
+.filtre:hover .bleu{
+    transition: 0.5s;
+    color: #FFF;
+    border-color: #0065FC;
+    background-color: #0065FC;
 }
 
 .nom-filtre {
@@ -378,7 +391,7 @@ main {
     box-shadow: 0 0 5px #DCDCDC;
     border-radius: 50px;
     margin: 10px 0;
-    width: 24%;
+    width: 350px;
     min-width: 100px;
     overflow: hidden;
 }
@@ -387,7 +400,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 400px;
 }
 
 .conteneur-activite-1 {
@@ -423,7 +435,7 @@ main {
 }
 
 .img-activite-p-margin img {
-    margin: -50px 0 0 -150px;
+    margin: -100px 0 0 -150px;
 }
 
 .img-activite-p-margin {
@@ -487,12 +499,22 @@ footer ul li {
     margin-top: -650px;
 }
 
+.link-offre-type3 {
+    display: flex;
+    max-width: 500px;
+}
+
+
 @media screen and (min-width: 320px) and (max-width: 754px) {
-    body { min-width: 380px;}
 
     header {
         display: flex;
         flex-direction: column;
+    }
+
+    .link-offre-type1 {
+        min-width: 300px;
+        display: flex;
     }
 
     .header-mobile {
@@ -509,7 +531,7 @@ footer ul li {
 
     .mobile-inscription {
         display: initial;
-        margin: auto 20px auto auto;
+        margin: auto 30px auto auto;
         text-decoration: none;
         font-family: Raleway, serif;
     }
@@ -521,7 +543,12 @@ footer ul li {
 
     .conteneur-lien a {
         text-align: center;
+        padding: 30px 30px 20px 40px;
         font-size: 0.9em;
+    }
+
+    .titre-activite {
+        font-size: 1.8em;
     }
 
     .conteneur-lien a:hover {
@@ -560,8 +587,9 @@ footer ul li {
 
     .recherche-champ {
         margin: 30px 0;
-        width: 370px;
+        width: 290px;
         border-right: none;
+        width: -moz-available;
     }
 
     .icon-champ {
@@ -653,15 +681,30 @@ footer ul li {
     }
 
     .activite {
-        height: 1750px;
+        height: 1950px;
     }
 
     .list-activite {
         display: flex;
         flex-direction: column;
         flex-wrap: unset;
+        align-items: center;
         margin-bottom: 50px;
-        margin-top: 450px;
+        margin-top: 550px;
+    }
+
+    .conteneur-activite-1 {
+        height: auto;
+    }
+
+    .conteneur-activite-2 {
+        height: auto;
+    }
+
+    .link-offre-type3 {
+        max-height: 320px;
+        width: -moz-available;
+        width: -webkit-fill-available;
     }
 
     .img-activite {
@@ -676,6 +719,7 @@ footer ul li {
 
     .img-activite img{
         width: -webkit-fill-available;
+        width: -moz-available;
         object-fit: cover;
         max-height: 200px;
         margin: 0px 0 0 -50px;
@@ -684,12 +728,14 @@ footer ul li {
     .conteneur-activite {
         margin: 10px 0;
         min-height: 260px;
-        width: auto;
+        width: -webkit-fill-available;
+        width: -moz-available;
     }
 
     footer {
         display: flex;
         flex-direction: column;
+        padding: 0;
     }
 
     footer ul li {
@@ -697,7 +743,7 @@ footer ul li {
     }
 }
 
-@media screen and (min-width: 754px) and (max-width: 1024px)  {
+@media screen and (min-width: 754px) and (max-width: 1023px)  {
 
     header {
         display: flex;
@@ -712,6 +758,10 @@ footer ul li {
         padding: 15px 0;
     }
 
+    .list-activite {
+        justify-content: center;
+    }
+
     .logo-reservia {
         margin: 0 0 0 20px;
         padding: 0;
@@ -719,9 +769,8 @@ footer ul li {
 
     .mobile-inscription {
         display: initial;
-        margin: auto;
+        margin: auto 45px auto auto;
         text-decoration: none;
-        margin-right: 20px;
         font-family: Raleway, serif;
     }
 
@@ -842,7 +891,8 @@ footer ul li {
     }
 
     .conteneur-populaire {
-        min-width: 500px;
+        width: -moz-available;
+        width: -webkit-fill-available;
     }
 
     .hebergement-marseille {
@@ -852,10 +902,6 @@ footer ul li {
         background: #FFF;
     }
 
-    .offre-type2 {
-        /* width: 768px; */
-        width: 1300px;
-    }
 
     .activite {
         height: 900px;
@@ -863,6 +909,11 @@ footer ul li {
 
     .offre-type1 {
         max-width: 300px;
+    }
+
+    .offre-type2 {
+        width: -moz-available;
+        width: -webkit-fill-available;
     }
 
     .cont-img1 img{
@@ -873,10 +924,15 @@ footer ul li {
     .list-activite {
         display: flex;
         flex-direction: unset;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         margin-bottom: 50px;
         height: auto;
+    }
+
+    .link-offre-type2 {
+        width: -moz-available;
+        width: -webkit-fill-available;
     }
 
     .img-activite {
@@ -896,6 +952,7 @@ footer ul li {
         margin: 0px 0 0 -50px;
     }
 
+
     .conteneur-activite {
         margin: 10px 20px;
         height: 260px;
@@ -914,17 +971,15 @@ footer ul li {
     }
 }
 
-@media screen and (min-width: 754px) and (max-width: 1024px) {
-    .mobile-inscription {
-        margin-right: 45px;
-    }
-
-    .list-activite {
-        justify-content: center;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .link-offre-type2 {
+        display: flex;
+        min-width: 50px ;
     }
 }
 
-@media screen and (min-width: 1108px) and (max-width: 1024px) {
+@media screen and (max-width: 1178px) and (min-width: 1023px) {
+  /*
     footer {
         flex-direction: unset;
     }
@@ -936,17 +991,58 @@ footer ul li {
     .activite {
         height: 620px;
     }
+*/
+    .nom-filtre {
+        font-size: 1em;
+    }
+
+    .hebergement {
+        justify-content: center;
+    }
+
+    .hebergement-marseille {
+        width: 500px;
+        flex: none;
+    }
+
+    .hebergement-populaire {
+        width: 300px;
+        flex: none;
+    }
+
+    .conteneur-offre-marseille {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        width: -moz-available;
+        width: -webkit-fil-availble;
+    }
+
+    .link-offre-type1 {
+        width: 350px;
+    }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-    body { min-width: 1190px;}
+@media screen and (min-width: 1024px) and (max-width: 1540px) {
 
     footer  ul {
         margin: 0 200px 0 50px
     }
 
     .offre-type1 {
-        margin: 10px 50px;
-        width: 240px;
+        width: -webkit-fill-available;
+        width: -moz-available;
+    }
+
+    .conteneur-activite {
+        width: 250px;
+    }
+
+    .img-activite-p-margin img {
+        margin: -100px 0 0 -250px;
+    }
+
+    .conteneur-text-offre2 h4 {
+        font-size: 1em;
     }
 }
