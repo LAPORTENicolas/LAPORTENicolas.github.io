@@ -313,12 +313,12 @@ a {
     margin: 10px;
     overflow: hidden;
     width: 320px;
+    height: 250px;
     box-shadow: 0px 0px 5px #DCDCDC;
 }
 
 .img-offre-m {
     width: 430px;
-    height: 200px;
     margin: -50px -50px -50px -100px;
 }
 
@@ -331,7 +331,7 @@ a {
 }
 
 .offre-type1 h4 {
-    margin-top: 60px;
+    margin-top: 20px;
     font-family: Raleway, Serif;
     padding-left: 20px;
     font-weight: bold;
@@ -379,6 +379,19 @@ a {
     margin: 2% 0;
     height: 800px;
     width: auto;
+}
+
+.cont-img1 {
+    max-height: 145px;
+    overflow: hidden;
+}
+
+.recadrement1 {
+    margin-top: -180px;
+}
+
+.recadrement2 {
+    margin-top: -270px;
 }
 
 .titre-activite {
