@@ -1,0 +1,41 @@
+@import ../Utils/variables
+
+footer
+  background-color: lighten($gris, 1%)
+  padding-left: 2rem
+  padding-bottom: 1rem
+  .logo-text
+    padding: 0.7rem 0
+    font-size: 0.8em
+    color: white
+    font-family: Shrikhand
+    font-weight: lighter
+  ul
+    a
+      color: #FFF
+    li
+      list-style: none
+      color: white
+      font-family: Roboto
+      font-size: 0.6em
+      padding-bottom: 0.5rem
+    .imp-footer
+      font-weight: bold
+    i
+      width: 20px
+  @media (min-width: 767px) and (max-width: 1920px)
+    padding: 0
+    height: 8rem
+    display: flex
+    justify-content: space-around
+    .logo-text
+      margin: auto 0
+      font-size: 1.8em
+    ul
+      margin: auto 0
+  @media (min-width: 1023px) and (max-width: 1920px)
+    ul
+      display: flex
+      li
+        margin: 0 1.3rem
+        font-size: .8em

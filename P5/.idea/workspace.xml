@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="408af1f8-d3a1-4e26-910d-06611481d71a" name="Default Changelist" comment="Correction">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/homepage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/homepage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/panier.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/panier.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/produit.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/produit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/panier.html" beforeDir="false" afterPath="$PROJECT_DIR$/panier.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/LAPORTENicolas/OC-P5-Orinoco" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ozBI4iGPEEBXe3hOkuJdlXBnwG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="408af1f8-d3a1-4e26-910d-06611481d71a" name="Default Changelist" comment="Readme" />
+      <created>1614279456299</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614279456299</updated>
+      <workItem from="1614279457503" duration="8742000" />
+      <workItem from="1614325469905" duration="94000" />
+      <workItem from="1614325602985" duration="9135000" />
+      <workItem from="1614354825684" duration="3235000" />
+      <workItem from="1614366804812" duration="4008000" />
+      <workItem from="1614523518562" duration="8696000" />
+      <workItem from="1614685056338" duration="1938000" />
+      <workItem from="1614687103174" duration="12686000" />
+      <workItem from="1614719249346" duration="5758000" />
+      <workItem from="1614776113675" duration="8042000" />
+      <workItem from="1614806307550" duration="10000" />
+      <workItem from="1614854581124" duration="11723000" />
+      <workItem from="1614930905255" duration="2347000" />
+      <workItem from="1614938602161" duration="2888000" />
+      <workItem from="1614969059260" duration="9351000" />
+      <workItem from="1614983474852" duration="2620000" />
+      <workItem from="1615032889692" duration="3631000" />
+      <workItem from="1615044760791" duration="1199000" />
+      <workItem from="1615108631681" duration="156000" />
+      <workItem from="1615111523971" duration="312000" />
+      <workItem from="1615120749979" duration="11000" />
+      <workItem from="1615225320395" duration="1305000" />
+      <workItem from="1615227132762" duration="3609000" />
+      <workItem from="1615236058652" duration="1859000" />
+      <workItem from="1615238541807" duration="2363000" />
+      <workItem from="1615313244645" duration="3349000" />
+      <workItem from="1615485016560" duration="8821000" />
+      <workItem from="1615835248594" duration="862000" />
+      <workItem from="1615839406931" duration="40000" />
+      <workItem from="1615894055206" duration="625000" />
+      <workItem from="1616495079344" duration="4261000" />
+      <workItem from="1616513145420" duration="49000" />
+      <workItem from="1616605855461" duration="13307000" />
+      <workItem from="1616680739754" duration="407000" />
+      <workItem from="1617044451451" duration="555000" />
+      <workItem from="1617045240487" duration="349000" />
+      <workItem from="1617191646662" duration="4769000" />
+    </task>
+    <task id="LOCAL-00001" summary="Fichiers HTML/CSS de base">
+      <created>1614285115982</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614285115982</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Ajout du repository JWPD5 OpenClassrooms-Student-Center">
+      <created>1614285243073</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614285243073</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Utilisation de l'api pour récupérer les données">
+      <created>1614327877365</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614327877365</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Affichage des données de l'API">
+      <created>1614334270640</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614334270640</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Création du panier + Ajout article">
+      <created>1614368351881</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614368351881</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Utlisation de sessionStorage pour faire passer les données de page en page">
+      <created>1614370707629</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614370707629</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Panier">
+      <created>1614536557539</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1614536557539</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Supr. des articles du panier">
+      <created>1614537838874</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1614537838874</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Modification de la page d'index">
+      <created>1614708448409</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1614708448409</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Modification de la page panier">
+      <created>1614708472917</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1614708472917</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Modification structure">
+      <created>1614723739043</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1614723739043</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Ajout de la page produit">
+      <created>1614723767254</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1614723767254</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Utlisation de l'api pour valider la panier">
+      <created>1614783089108</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1614783089108</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Correction">
+      <created>1614855056115</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1614855056115</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Edit fetch">
+      <created>1614862710468</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1614862710468</updated>
+    </task>
+    <task id="LOCAL-00016" summary="ajout de commentaires">
+      <created>1614866098527</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1614866098527</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Commentaire dans le code">
+      <created>1614974280240</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1614974280240</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Confirmation de la commande">
+      <created>1614974420193</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1614974420193</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Correction du bug sur la valeur de la commande sur la page de confirmation">
+      <created>1614976092587</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1614976092587</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Vérifiaction des champs dans le formulaire panier">
+      <created>1614983659560</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1614983659560</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Correction RegExp">
+      <created>1615050034909</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1615050034909</updated>
+    </task>
+    <task id="LOCAL-00022" summary="W3C">
+      <created>1615111747229</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1615111747229</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Correctif">
+      <created>1615494956673</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1615494956673</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Readme">
+      <created>1615898007688</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1615898007688</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Responsive Mobile Tablet Desktop + Animation ajout au panier d'un article">
+      <created>1616620070015</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1616620070015</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Utilisation des constantes">
+      <created>1616621256752</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1616621256752</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Formulaire static =&gt; Formulaire dynamique pour le panier">
+      <created>1616624672691</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1616624672691</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Correction">
+      <created>1616680854945</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1616680854945</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Correction">
+      <created>1617191845708</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1617191845708</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Utilisation de l'api pour récupérer les données" />
+    <MESSAGE value="Affichage des données de l'API" />
+    <MESSAGE value="Création du panier + Ajout article" />
+    <MESSAGE value="Utlisation de sessionStorage pour faire passer les données de page en page" />
+    <MESSAGE value="Panier" />
+    <MESSAGE value="Supr. des articles du panier" />
+    <MESSAGE value="Modification de la page d'index" />
+    <MESSAGE value="Modification de la page panier" />
+    <MESSAGE value="Modification structure" />
+    <MESSAGE value="Ajout de la page produit" />
+    <MESSAGE value="Utlisation de l'api pour valider la panier" />
+    <MESSAGE value="Edit fetch" />
+    <MESSAGE value="ajout de commentaires" />
+    <MESSAGE value="Commentaire dans le code" />
+    <MESSAGE value="Confirmation de la commande" />
+    <MESSAGE value="Correction du bug sur la valeur de la commande sur la page de confirmation" />
+    <MESSAGE value="Vérifiaction des champs dans le formulaire panier" />
+    <MESSAGE value="Correction RegExp" />
+    <MESSAGE value="W3C" />
+    <MESSAGE value="Correctif" />
+    <MESSAGE value="Readme" />
+    <MESSAGE value="Responsive Mobile Tablet Desktop + Animation ajout au panier d'un article" />
+    <MESSAGE value="Utilisation des constantes" />
+    <MESSAGE value="Formulaire static =&gt; Formulaire dynamique pour le panier" />
+    <MESSAGE value="Correction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction" />
+  </component>
+</project>

@@ -1,0 +1,167 @@
+@import ../Utils/variables
+@import ../Utils/mixins
+@import ../Base/app
+@import ../Components/bouton
+@import ../Components/animations
+@import ../Layout/footer
+@import ../Layout/header-menu
+
+
+
+.cat-1
+  animation: affichage-prog ease 1s
+  animation-delay: 0s
+
+.cat-2
+  animation: affichage-prog ease 1s
+  animation-delay: 0.5s
+
+.cat-3
+  animation: affichage-prog ease 1s
+  animation-delay: 1s
+
+main
+  +background-color(75%)
+  @media (min-width: 767px) and (max-width: 1920px)
+    padding: 5% 20% 0 20%
+    background-size: cover
+
+.delicesens
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg")
+
+.enchante
+  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg")
+
+.francaise
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg")
+
+.paletteGout
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg")
+
+.delicesens--img
+  background-image: url("../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg")
+  @media (min-width: 767px) and (max-width: 1920px)
+    background: transparent
+
+.enchante--img
+  background-image: url("../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg")
+  @media (min-width: 767px) and (max-width: 1920px)
+    background: transparent
+
+.francaise--img
+  background-image: url("../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg")
+  @media (min-width: 767px) and (max-width: 1920px)
+    background: transparent
+
+.paletteGout--img
+  background-image: url("../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg")
+  @media (min-width: 767px) and (max-width: 1920px)
+    background: transparent
+
+.menu__list
+  +background-color(75%)
+  border-radius: 20px 20px 0 0
+
+.top-section
+  background-position: top
+  background-size: cover
+  height: 12rem
+  display: flex
+  flex-direction: column-reverse
+  &__titre
+    height: 80px
+    width: 100%
+    display: flex
+    vertical-align: center
+    justify-content: space-around
+    +background-color(75%)
+    border-radius: 20px 20px 0 0
+    position: absolute
+    top: 200px
+    h2
+      font-family: Shrikhand
+      font-weight: lighter
+      font-size: 1.3em
+      margin: auto 0
+    i
+      margin: auto 0
+  @media (min-width: 767px) and (max-width: 1920px)
+    height: 2rem
+  &__titre
+    position: unset
+    top: 0
+    h2
+      font-size: 1.8em
+      padding-top: 1rem
+
+.cat-vue
+  padding: 1.5rem 1rem 0 1rem
+  opacity: 0
+  animation-fill-mode: forwards
+  h3
+    font-weight: lighter
+    font-size: 1em
+    border-bottom: 3px solid $vert
+    width: 2rem
+    padding-bottom: 0.1rem
+    @media (min-width: 1023px) and (max-width: 1920px)
+      font-size: 1.5em
+  &__article
+    background-color: #FFF
+    margin: 1rem 0
+    display: flex
+    justify-content: space-between
+    +box-shadows(70%)
+    border-radius: 10px
+    .text__conteneur
+      width: 90%
+      padding: 0.5rem
+      h4
+      font-size: 1em
+      div
+        display: flex
+        justify-content: space-between
+        p
+          margin: 0.1rem 0
+          padding: 0 0.5rem 0 0
+          white-space: nowrap
+          overflow: hidden
+          text-overflow: ellipsis
+          font-weight: lighter
+          font-size: 0.9em
+        span
+          font-size: 0.9em
+          font-weight: bold
+        i
+          background-color: $vert
+          color: white
+  @media (min-width: 1023px) and (max-width: 1920px)
+  &__article
+    .animation__conteneur
+      width: 0
+      overflow: hidden
+      background-color: $vert
+      border-radius: 0 10px 10px 0
+      display: flex
+      justify-content: center
+      i
+        color: white
+        margin: auto
+  &__article:hover
+    cursor: pointer
+    .text__conteneur
+      min-width: 80%
+    .animation__conteneur
+      animation: cloche ease 2s
+      animation-delay: 0.3s
+      i
+        transform: rotateZ(360deg)
+        transition: 0.5s
+        transition-delay: 0.3s
+  &--grand_padding
+    @extend .cat-vue
+    padding: .5rem 1rem 0 1rem
+
+.bouton__conteneur
+  display: flex
+  justify-content: center

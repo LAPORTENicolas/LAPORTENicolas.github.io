@@ -1,0 +1,232 @@
+@import ../Utils/variables
+@import ../Utils/mixins
+@import ../Base/app
+@import ../Components/bouton
+@import ../Components/animations
+@import ../Layout/footer
+@import ../Layout/header-accueil
+
+html
+  animation: forwards 2.8s anti-scroll
+
+.ecran-chargement
+  z-index: 5
+  position: fixed
+  background-color: $bleu
+  height: 100%
+  width: 100%
+  top: 0
+  animation: disparition ease 0.5s
+  animation-fill-mode: forwards
+  animation-delay: 2.8s
+  &__titre
+    margin-top: 30%
+    @media (min-width: 1023px) and (max-width: 1920px)
+      margin-top: 10%
+    h2
+      color: white
+      font-family: Shrikhand
+      font-size: 2em
+      text-align: center
+      margin-bottom: 1rem
+    div
+      margin: auto
+      height: 50px
+      width: 50px
+      border: 5px solid #FFF
+      border-radius: 50px
+      border-top: 5px solid rgba(0,0,0,0)
+      background-color: rgb(0,0,0,0)
+      animation: rotation-chargeur linear 3s
+      animation-delay: 0.5s
+
+main
+  opacity: 0
+  animation: affichage-prog forwards 0.4s
+  animation-delay: 2.7s
+
+.top-section
+  +background-color(75%)
+  text-align: center
+  padding-bottom: 3em
+  h2
+    font-size: 1.2em
+    padding: 1.5rem 3rem 0.5rem
+  p
+    color: $gris
+    font-size: 1em
+    margin: 0 1rem
+    padding-bottom: 2rem
+  @media (min-width: 1023px) and (max-width: 1920px)
+    padding: 2rem 0 4rem 0
+    h2
+      font-size: 2.5em
+    p
+      padding-bottom: 3rem
+
+.fonctionnement
+  h2
+    font-size: 1.2em
+    margin: 2rem 0 1rem 1rem
+
+.list-fonctionnement
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-bottom: 2rem
+  @media (min-width: 1023px) and (max-width: 1920px)
+    display: flex
+    flex-direction: unset
+    justify-content: space-around
+    .fonctionnement__etape
+      width: 20%
+
+.fonctionnement__etape
+  +box-shadows(70%)
+  +background-color(75%)
+  display: flex
+  border-radius: 15px
+  margin: 10px 0
+  width: 80%
+  height: 3rem
+  span
+    background-color: $bleu
+    color: white
+    text-align: center
+    line-height: 20px
+    font-size: .8em
+    border-radius: 500rem
+    position: relative
+    margin: auto 0
+    height: 20px
+    width: 20px
+    right: 10px
+  p
+    line-height: 50px
+    font-size: .8em
+    font-weight: bold
+    i
+      font-size: 1.2em
+      margin: auto 20px auto 5px
+      color: lighten($gris, 20%)
+  &--active
+    @extend .fonctionnement__etape
+    background-color: lighten($bleu, 35%)
+    .icon-base
+      color: $bleu
+  @media (min-width: 1439px) and (max-width: 1920px)
+    font-size: 1.4em
+    padding: .8rem
+    span
+      height: 30px
+      width: 30px
+      right: 20px
+      line-height: 30px
+.restaurants
+  +background-color(75%)
+  padding-bottom: 3rem
+  h2
+    padding: 40px 0 10px 20px
+    font-size: 1.3em
+
+.list-restaurants
+  display: flex
+  flex-direction: column
+  align-items: center
+  @media (min-width: 767px) and (max-width: 1023px)
+    flex-direction: unset
+    flex-wrap: wrap
+    justify-content: space-around
+    .image-restaurants > span
+      margin-left: 30%
+    .restaurants__conteneur
+      width: 40%
+  @media (min-width: 1023px) and (max-width: 1439px)
+    .restaurants__conteneur
+      width: 30%
+  @media (min-width: 1439px) and (max-width: 1920px)
+    .restaurants__conteneur
+      width: 20%
+  @media (min-width: 1023px) and (max-width: 1920px)
+    flex-direction: unset
+    justify-content: space-around
+    flex-wrap: wrap
+    .image-restaurants > span
+      margin-left: .5%
+
+.restaurants__conteneur
+  +box-shadows(70%)
+  width: 90%
+  height: 200px
+  margin: 0.5rem 0
+  .image-restaurants
+    border-radius: 10px 10px 0 0
+    overflow: hidden
+    max-height: 140px
+    display: flex
+    span
+      z-index: 2
+      position: absolute
+      font-size: 0.8em
+      background-color: $vert
+      color: darken($vert, 50%)
+      padding: 0.3rem 0.5rem
+      margin-top: 0.5rem
+      border-radius: 0.1rem
+      @media (max-width: 767px)
+        right: 8%
+    img
+      z-index: 1
+      margin-top: -50px
+      object-position: center
+      width: 100%
+  .text-restaurants
+    display: flex
+    justify-content: space-between
+    background-color: #FFF
+    border-radius: 0 0 10px 10px
+    padding: 0.8rem 0
+    .text
+      display: flex
+      flex-direction: column
+      font-size: 0.8em
+      margin-left: 0.5rem
+      h3
+        padding-bottom: 0.2rem
+
+
+.animation__icon
+  display: flex
+  margin: 7px 30px 0 0
+  .checkbox_cache
+    display: none
+  .icon__content
+    label
+      display: block
+    .icon
+      z-index: 3
+      position: absolute
+      color: transparent
+      -webkit-text-stroke: 1px black
+    .masque
+      z-index: 2
+      display: block
+      position: absolute
+      height: 20px
+      width: 20px
+      background-color: #FFF
+      transform: translateY(-5px)
+      border-radius: 35%
+    .icon_animation
+      z-index: 1
+      background: -webkit-linear-gradient($bleu, $rose)
+      -webkit-background-clip: text
+      color: transparent
+      position: absolute
+  .checkbox_cache:checked + .icon__content
+    .icon
+      content: ''
+      animation: bordure-coeur 0.5s forwards
+    .masque
+      animation: icon-coeur 1.5s forwards
+      animation-timing-function: ease-in-out
