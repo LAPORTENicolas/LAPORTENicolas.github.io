@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+        <link rel="shortcut icon" type="image/png" href="img/favicons.png">
+        <link rel="stylesheet" type="text/css" href="sass/main.css"/>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+        <meta name="description" content="Faites-vous livrer vos plats préférés directement chez vous avec Uber Eats. Découvrez notre sélection de restaurants et passez commande sans attendre !">
+        <title>Les plats de vos restaurants préférés, livré rapidement</title>
+    </head>
+
+    <body onscroll="scrollHeader()">
+
+    <div class="modal center hidden" id="modal">
+        <div class="modal__container">
+            <div class="close" id="close">
+                <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="m19.5831 6.24931-1.8333-1.83329-5.75 5.83328-5.75-5.83328-1.8333 1.83329 5.8333 5.74999-5.8333 5.75 1.8333 1.8333 5.75-5.8333 5.75 5.8333 1.8333-1.8333-5.8333-5.75z" fill="#000000"></path></svg>
+            </div>
+            <div class="modal__container--text">
+                <h3>Choisissez une heure</h3>
+                <select id="date_select">
+                </select>
+                <select id="time_select">
+                </select>
+                <button class="btn btn-dark" id="planifier">Planifier</button>
+                <button class="btn btn-gray">Livrer maintenant</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal left hidden" id="menu">
+        <div class="menu-burger">
+            <nav class="menu-burger__top">
+                <button class="btn btn-dark">Se connecter</button>
+
+                <ul>
+                    <li>Créez un compte professionnel</li>
+                    <li>Ajouter votre restaurant</li>
+                    <li>Devenez coursier-partenaire</li>
+                </ul>
+            </nav>
+
+            <div class="menu-burger__bottom">
+                <div class="top">
+                    <img src="img/png/logo-application.png" alt="Logo uberEats">
+                    <p>Plus de fonctionnalités dans l'application</p>
+                </div>
+                <div class="bottom">
+                    <p><i class="fab fa-apple"></i> Iphone</p>
+                    <p><svg aria-hidden="true" focusable="false" height="15" viewBox="0 0 24 24" class="cd ce c3 cf"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M15.297 3.415l-.233.343c1.77.804 2.97 2.326 2.97 4.069H6.341c0-1.743 1.199-3.265 2.97-4.069l-.234-.343-.233-.338-.52-.761a.2.2 0 01.058-.282.214.214 0 01.29.057l.793 1.157.238.348a7.035 7.035 0 012.484-.444c.888 0 1.729.16 2.484.444l1.032-1.505a.21.21 0 01.288-.057.198.198 0 01.059.282l-.52.76-.234.339zm-1.23 2.176c0 .337.28.61.626.61a.618.618 0 00.627-.61.617.617 0 00-.627-.61.617.617 0 00-.627.61zm-4.385.61a.618.618 0 01-.627-.61c0-.338.28-.61.627-.61.346 0 .627.272.627.61 0 .337-.28.61-.627.61z"></path><path d="M6.342 8.639h11.692v8.942c0 .71-.592 1.288-1.322 1.288h-.956c.033.107.052.22.052.338v2.574c0 .673-.562 1.22-1.254 1.22s-1.253-.547-1.253-1.22v-2.574c0-.119.018-.23.05-.338h-2.327c.032.107.051.22.051.338v2.574c0 .673-.562 1.22-1.253 1.22-.692 0-1.254-.547-1.254-1.22v-2.574c0-.119.018-.23.05-.338h-.953c-.73 0-1.323-.578-1.323-1.288V8.639zm-2.089 0C3.561 8.639 3 9.185 3 9.858v5.216c0 .673.56 1.22 1.253 1.22.692 0 1.253-.547 1.253-1.22V9.858c0-.673-.561-1.219-1.253-1.219zM18.87 9.858c0-.673.56-1.219 1.253-1.219.691 0 1.252.546 1.252 1.219v5.216c0 .673-.56 1.22-1.252 1.22-.693 0-1.254-.547-1.254-1.22V9.858z"></path></g></svg> Android</p>
+                </div>
+            </div>
+        </div>
+        <div id="exit"></div>
+    </div>
+
+        <header>
+            <div>
+                <div id="header-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+                <div>
+                    <img src="img/png/logo.png" alt="Logo"/>
+                </div>
+
+                <div class="input-text" id="input-header">
+                    <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path d="M17.5834 5.16602C14.5001 2.08268 9.50008 2.08268 6.41675 5.16602C3.33341 8.24935 3.33341 13.3327 6.41675 16.416L12.0001 21.9993L17.5834 16.3327C20.6667 13.3327 20.6667 8.24935 17.5834 5.16602ZM12.0001 12.416C11.0834 12.416 10.3334 11.666 10.3334 10.7493C10.3334 9.83268 11.0834 9.08268 12.0001 9.08268C12.9167 9.08268 13.6667 9.83268 13.6667 10.7493C13.6667 11.666 12.9167 12.416 12.0001 12.416Z" fill="#000000">
+                        </path>
+                    </svg>
+                    <input type="text" placeholder="Saisissez l'adresse de livraison">
+                    <span class="border-input"></span>
+                </div>
+            </div>
+
+            <div>
+                <a class="btn-litle">Se connecter</a>
+            </div>
+        </header>
+
+        <section class="hero-banner" id="hero-banner">
+            <div class="hero-banner--img">
+                <img src="" alt="HeroBannerPicture" class="one" id="picHeroBanner1">
+                <img src="" alt="HeroBannerPicture" class="two" id="picHeroBanner2">
+            </div>
+            <div class="hero-banner--container">
+                <h1>Vous avez faim ? Faites-vous livrer !</h1>
+
+                <form class="hero-banner--container__input">
+                    <div class="input-text">
+                        <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                            <path d="M17.5834 5.16602C14.5001 2.08268 9.50008 2.08268 6.41675 5.16602C3.33341 8.24935 3.33341 13.3327 6.41675 16.416L12.0001 21.9993L17.5834 16.3327C20.6667 13.3327 20.6667 8.24935 17.5834 5.16602ZM12.0001 12.416C11.0834 12.416 10.3334 11.666 10.3334 10.7493C10.3334 9.83268 11.0834 9.08268 12.0001 9.08268C12.9167 9.08268 13.6667 9.83268 13.6667 10.7493C13.6667 11.666 12.9167 12.416 12.0001 12.416Z" fill="#000000">
+                            </path>
+                        </svg>
+                        <input autocomplete="street-address" type="text" onchange="onChange()" value="" placeholder="Saisissez l'adresse de livraison" id="locationInput">
+                        <span class="remove hide" id="remove">Effacer</span>
+                        <span class="border-input"></span>
+                    </div>
+
+                    <div class="list">
+                        <div class="list__initial" id="printList">
+                            <svg width="25px" height="25px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2.83398C6.91671 2.83398 2.83337 6.91732 2.83337 12.0007C2.83337 17.084 6.91671 21.1673 12 21.1673C17.0834 21.1673 21.1667 17.084 21.1667 12.0007C21.1667 6.91732 17.0834 2.83398 12 2.83398ZM17 13.6673H10.3334V5.33398H12.8334V11.1673H17V13.6673Z" fill="#000000"></path></svg>
+                            <div>
+                                <span>Livré maintenant</span>
+                                <svg width="24px" height="24px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M17 11.7494V14.916L12 11.0827L7 14.916V11.7494L12 7.91602L17 11.7494Z" fill="#000000" transform="rotate(180, 12, 12)"></path></svg>
+                            </div>
+                        </div>
+                        <div class="list--container" id="list">
+                            <ul>
+                                <li><svg width="20px" height="20px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2.83398C6.91671 2.83398 2.83337 6.91732 2.83337 12.0007C2.83337 17.084 6.91671 21.1673 12 21.1673C17.0834 21.1673 21.1667 17.084 21.1667 12.0007C21.1667 6.91732 17.0834 2.83398 12 2.83398ZM17 13.6673H10.3334V5.33398H12.8334V11.1673H17V13.6673Z" fill="#000000"></path></svg> <span>Livrer maintenant</span></li>
+                                <li id="for_later"><svg width="20px" height="20px" fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.1666 8.66732V5.33398H18.6666V2.83398H16.1666V5.33398H7.83325V2.83398H5.33325V5.33398H2.83325V8.66732H21.1666ZM21.1666 21.1673H2.83325V10.334H21.1666V21.1673ZM8.66658 13.6673H6.16658V16.1673H8.66658V13.6673Z" fill="#000000"></path></svg> <span>Planifier pour plus tard</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <a type="submit" class="btn btn-dark">Trouver un restaurant</a>
+                </form>
+
+                <span class="litle-text"><a href="#">Connexion</a> pour afficher vos adresses récentes</span>
+            </div>
+            <script src="js/init.js"></script>
+        </section>
+
+        <section class="presentation">
+            <div class="presentation__title">
+                <img src="img/png/logo-application.png" alt="Logo uber eats">
+                <h2>Plus de fonctionnalités dans l'application.</h2>
+                <p><i class="fab fa-apple"></i> Iphone</p>
+                <p><svg aria-hidden="true" focusable="false" height="15" viewBox="0 0 24 24" class="cd ce c3 cf"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M15.297 3.415l-.233.343c1.77.804 2.97 2.326 2.97 4.069H6.341c0-1.743 1.199-3.265 2.97-4.069l-.234-.343-.233-.338-.52-.761a.2.2 0 01.058-.282.214.214 0 01.29.057l.793 1.157.238.348a7.035 7.035 0 012.484-.444c.888 0 1.729.16 2.484.444l1.032-1.505a.21.21 0 01.288-.057.198.198 0 01.059.282l-.52.76-.234.339zm-1.23 2.176c0 .337.28.61.626.61a.618.618 0 00.627-.61.617.617 0 00-.627-.61.617.617 0 00-.627.61zm-4.385.61a.618.618 0 01-.627-.61c0-.338.28-.61.627-.61.346 0 .627.272.627.61 0 .337-.28.61-.627.61z"></path><path d="M6.342 8.639h11.692v8.942c0 .71-.592 1.288-1.322 1.288h-.956c.033.107.052.22.052.338v2.574c0 .673-.562 1.22-1.254 1.22s-1.253-.547-1.253-1.22v-2.574c0-.119.018-.23.05-.338h-2.327c.032.107.051.22.051.338v2.574c0 .673-.562 1.22-1.253 1.22-.692 0-1.254-.547-1.254-1.22v-2.574c0-.119.018-.23.05-.338h-.953c-.73 0-1.323-.578-1.323-1.288V8.639zm-2.089 0C3.561 8.639 3 9.185 3 9.858v5.216c0 .673.56 1.22 1.253 1.22.692 0 1.253-.547 1.253-1.22V9.858c0-.673-.561-1.219-1.253-1.219zM18.87 9.858c0-.673.56-1.219 1.253-1.219.691 0 1.252.546 1.252 1.219v5.216c0 .673-.56 1.22-1.252 1.22-.693 0-1.254-.547-1.254-1.22V9.858z"></path></g></svg> Android</p>
+            </div>
+
+            <div class="presentation__cta">
+                <div>
+                    <img src="https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cef389b486cb4827e6ba007f26ebddab.svg" alt="Illustration">
+                    <h3>Aidez vos collaborateurs à se restaurer</h3>
+                    <a href="#">Créez un compte professionnel</a>
+                </div>
+
+                <div>
+                    <img src="img/png/file3.png" alt="Illustration">
+                    <h3>Les plats de vos restaurants préférés, livrés chez vous</h3>
+                    <a href="#">Ajoutez votre restaurant</a>
+                </div>
+
+                <div>
+                    <img src="img/png/file2.png" alt="Illustration">
+                    <h3>Livrez avec Uber Eats</h3>
+                    <a href="#">Devenez coursier-partenaire</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <div class="map--title">
+                <h2>Villes à proximité</h2>
+                <a href="#">Afficher toutes les villes (+ de 500)</a>
+            </div>
+
+            <div class="map--map"></div>
+
+            <div class="map--other-location">
+                <div class="cities">
+                    <div><a href="#"><span class="c4 bf e2">Amiens</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Angers</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Bordeaux</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Clermont-Ferrand</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Dijon</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Grenoble</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">La&nbsp;Rochelle</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Lille</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Limoges</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Lyon</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Marseille</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Montpellier</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Mulhouse</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Nantes</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Nice</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Orléans</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Paris</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Perpignan</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Reims</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Rennes</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Rouen</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Strasbourg</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Toulouse</span></a></div>
+                    <div><a href="#"><span class="c4 bf e2">Tours</span></a></div>
+                </div>
+                <h2>Uber Eats à travers le monde</h2>
+                <div class="country">
+                        <div><a href="#"><span class="c4 bf e2">États-Unis</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Espagne</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Brésil</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Mexique</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">France</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Japon</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Canada</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Australie</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Pologne</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Royaume-Uni</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Italie</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Portugal</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Suisse</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Chili</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Nouvelle-Zélande</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Taiwan</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Afrique du Sud</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Belgique</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Équateur</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Irlande</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Sri Lanka</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Suède</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">République dominicaine</span></a></div>
+                        <div><a href="#"><span class="c4 bf e2">Guatemala</span></a></div></div>
+            </div>
+
+        </section>
+
+        <footer>
+            <nav>
+                <div class="top">
+                    <div class="top--logo">
+                        <img src="img/png/uberWhitesvg.png" alt="logo ubereats" height="24"/>
+                        <div>
+                            <img src="img/png/getOnIphone.png" alt="appStore">
+                            <img src="img/png/getOnPlaystore.png" alt="playStore">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="middle">
+                    <h4>À propos d'Uber eats</h4>
+                    <ul>
+                        <li><a href="//www.uber.com/blog/eat/">Consultez notre blog</a></li>
+                        <li><a href="//www.uber.com/business/eats">Créez un compte professionnel</a></li>
+                        <li><a href="//www.ubereats.com/restaurant">Ajoutez votre restaurant</a></li>
+                        <li><a href="//www.uber.com/drive/delivery/">Devenez coursier-partenaire</a></li>
+                    </ul>
+                </div>
+
+                <div class="end">
+                    <h4>À propos d'Uber eats</h4>
+                    <ul>
+                        <li><a href="#">Affichez toutes les villes</a></li>
+                        <li><a href="#">Tous les pays</a></li>
+                        <li><a href="#">Restaurants à proximité</a></li>
+                        <li><a href="#">Économisez sur votre première commande.</a></li>
+                        <li class="li-icon"><a><svg aria-label="Sélectionnez une langue" role="img" focusable="false" viewBox="0 0 16 15" class="cd ce c3 cf"><path d="M12.267 6.667H9.733l-.933 2.2c-.467-.2-1-.534-1.533-.934.866-.866 1.6-2 2-3.266h1.4v-2h-4v-2h-2v2h-4v2h1.466c.4 1.266 1.134 2.4 1.934 3.266-1.4.934-2.734 1.467-2.734 1.467v2.133L2 11.267c.133-.067 1.867-.667 3.667-2 .8.6 1.666 1.066 2.333 1.4l-1.8 4h2.2l.867-2h3.466l.867 2h2.2zm-5.2-2a6.79 6.79 0 01-1.4 2c-.534-.6-1.067-1.267-1.4-2zm3.066 6L11 8.733l.867 1.934z"></path></svg>Français</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="spacer"></div>
+
+            <div class="bottom">
+                <div>
+                    <div class="social-network">
+                        <a href="//www.facebook.com/ubereats">
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path d="M14.667 0H1.333C.597 0 0 .597 0 1.333v13.334C0 15.403.597 16 1.333 16h7.334v-6h-2V7.333h2V5.61c0-2.067 1.262-3.192 3.106-3.192.883 0 1.642.066 1.863.095v2.16h-1.279c-1.002 0-1.196.477-1.196 1.176v1.485h2.96L13.454 10h-2.293v6h3.506c.736 0 1.333-.597 1.333-1.333V1.333C16 .597 15.403 0 14.667 0z"></path></svg>
+                        </a>
+
+                        <a href="//www.twitter.com/ubereats">
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 14 12"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.973 1.429a5.556 5.556 0 01-1.649.476A3.02 3.02 0 0013.587.231c-.554.34-1.169.59-1.823.728A2.792 2.792 0 009.668 0c-1.585 0-2.87 1.356-2.87 3.025 0 .24.026.47.074.692-2.385-.12-4.5-1.328-5.916-3.154-.249.443-.388.96-.388 1.522 0 1.051.507 1.976 1.276 2.52a2.754 2.754 0 01-1.3-.378v.036c0 1.467.988 2.692 2.302 2.97a2.776 2.776 0 01-1.29.052c.368 1.202 1.426 2.077 2.685 2.102A5.566 5.566 0 010 10.641 7.856 7.856 0 004.407 12c5.282 0 8.168-4.611 8.168-8.604 0-.13 0-.259-.01-.388.56-.424 1.05-.959 1.435-1.567l-.027-.012z"></path></svg>
+                        </a>
+
+                        <a href="//www.instagram.com/ubereats">
+                            <svg aria-hidden="true" focusable="false" viewBox="0 0 16 16"><path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C5.827 0 5.555.01 4.702.048 3.85.088 3.27.222 2.76.42a3.908 3.908 0 00-1.417.923c-.445.444-.72.89-.923 1.417-.198.51-.333 1.09-.372 1.942C.008 5.555 0 5.827 0 8s.01 2.445.048 3.298c.04.852.174 1.433.372 1.942.204.526.478.973.923 1.417.444.445.89.72 1.417.923.51.198 1.09.333 1.942.372.853.04 1.125.048 3.298.048s2.445-.01 3.298-.048c.852-.04 1.433-.174 1.942-.372a3.908 3.908 0 001.417-.923c.445-.444.72-.89.923-1.417.198-.51.333-1.09.372-1.942.04-.853.048-1.125.048-3.298s-.01-2.445-.048-3.298c-.04-.852-.174-1.433-.372-1.942a3.908 3.908 0 00-.923-1.417A3.886 3.886 0 0013.24.42c-.51-.198-1.09-.333-1.942-.372C10.445.008 10.173 0 8 0zm0 1.44c2.136 0 2.39.01 3.233.048.78.036 1.203.166 1.485.276.374.145.64.318.92.598.28.28.453.546.598.92.11.282.24.705.276 1.485.038.844.047 1.097.047 3.233s-.01 2.39-.05 3.233c-.04.78-.17 1.203-.28 1.485-.15.374-.32.64-.6.92-.28.28-.55.453-.92.598-.28.11-.71.24-1.49.276-.85.038-1.1.047-3.24.047s-2.39-.01-3.24-.05c-.78-.04-1.21-.17-1.49-.28a2.49 2.49 0 01-.92-.6c-.28-.28-.46-.55-.6-.92-.11-.28-.24-.71-.28-1.49-.03-.84-.04-1.1-.04-3.23s.01-2.39.04-3.24c.04-.78.17-1.21.28-1.49.14-.38.32-.64.6-.92.28-.28.54-.46.92-.6.28-.11.7-.24 1.48-.28.85-.03 1.1-.04 3.24-.04L8 1.44zm0 2.452a4.108 4.108 0 100 8.215 4.108 4.108 0 000-8.215zm0 6.775a2.667 2.667 0 110-5.334 2.667 2.667 0 010 5.334zm5.23-6.937a.96.96 0 11-1.92 0 .96.96 0 011.92 0z"></path></svg>
+                        </a>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li><a href="#">Fonctionnement des sites et des applications Uber et Uber Eats</a></li>
+                            <li><a href="#">Politique de confidentialité</a></li>
+                            <li><a href="#">Conditions</a></li>
+                            <li><a href="#">Tarifs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>Ce site est protégé par reCAPTCHA. Par ailleurs, la <a href="#">Politique de confidentialité</a> et les <a href="#">Conditions d'utilisation</a> de Google s'appliquent.</li>
+                        <li>© 2021 Uber Technologies Inc.</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC3gF6G6g9JIvlGo8w7p76q8E9J09Qszro&callback=initMap&libraries=&v=weekly" async defer></script>
+        <script src="js/main.js"></script>
+        <script src="js/maps.js"></script>
+    </body>
+</html>

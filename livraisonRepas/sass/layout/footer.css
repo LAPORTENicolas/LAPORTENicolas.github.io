@@ -1,0 +1,10 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+footer .top--getIn img {
+  max-height: 40px;
+}
+
+/*# sourceMappingURL=footer.css.map */
