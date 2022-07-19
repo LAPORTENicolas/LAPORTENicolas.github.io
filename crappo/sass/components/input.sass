@@ -1,0 +1,92 @@
+@import '../utils/variables'
+@import '../utils/mixins'
+
+.input-form
+  position: relative
+  label
+    position: absolute
+    transform-origin: left
+    left: 0
+    transition: .2s
+    color: $primary
+    &:hover
+      cursor: text
+
+
+.input-classic:focus ~ label
+  transition: .4s
+  transform: scale(.5)
+  top: -20px
+
+.input-classic
+  color: transparent
+  border-bottom: 1px solid $gray5
+  transition: .2s
+  width: 433px
+  background: transparent
+  @media (min-width: 1920px)
+    width: 537px
+  @media (max-width: 1750px)
+    width: 350px
+  @media (max-width: 1400px)
+    width: 280px !important
+  &:focus
+    color: $primary
+    transition: .2s .19s
+    border-color: $primary
+
+.input-select
+  position: relative
+  color: $primary
+  padding-left: 0
+  background: transparent
+  &:hover
+    cursor: pointer
+  li
+    position: absolute
+    color: $primary
+    border: none
+    list-style: none
+    width: 200px
+    @media (min-width: 1920px)
+      width: 266px
+    @media (max-width: 1750px)
+      width: 200px
+  .two:hover, .three:hover, .four:hover, .five:hover
+    background-color: #d8dbe3
+  .active-select
+    position: relative
+    display: block
+    border-bottom: 1px solid $gray5
+    color: $primary
+    &::after
+      position: absolute
+      top: 0
+      right: 0
+      display: block
+      content: url("../asset/icon/Arrow Down.svg")
+      width: 16px
+      height: 16px
+      @media (min-width: 1920px)
+        width: 21px
+        height: 21px
+  .two, .three, .four, .five
+    display: none
+    z-index: 1
+    background: #F8F9FB
+  .two
+    top: 39px
+    @media (max-width: 1749px)
+      top: 30px
+  .three
+    top: 78px
+    @media (max-width: 1749px)
+      top: 60px
+  .four
+    top: 117px
+    @media (max-width: 1749px)
+      top: 90px
+  .five
+    top: 156px
+    @media (max-width: 1749px)
+      top: 120px

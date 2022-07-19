@@ -1,0 +1,341 @@
+@import "../utils/variables"
+@import "../utils/mixins"
+
+body
+  background-color: $primary
+  overflow-x: hidden
+
+
+.landing
+  margin: 0 120px
+  display: flex
+  &-left
+    margin-top: 131px
+    flex: 1
+    &-top
+      display: flex
+      justify-content: space-between
+      background-color: rgba(white, .1)
+      height: 40px
+      width: fit-content
+      border-radius: 32px
+      @media (min-width: 1920px)
+        height: 45px
+      span, p
+        margin: auto 0
+      span
+        color: $primary
+        font-family: Rubik, serif
+        font-size: 16px
+        font-weight: 500
+        margin-left: 4px
+        padding: 4px 16px
+        background-color: white
+        border-radius: 32px
+        @media (min-width: 1920px)
+          padding: 7px 16px
+      p
+        color: white
+        margin: auto 16px auto 11px
+        line-height: 4px
+    &-middle
+      h1
+        margin: 24px 0
+        color: white
+      p
+        margin-bottom: 32px
+        color: $gray5
+        margin-right: 161px
+        @media (min-width: 1920px)
+          margin-right: 214px
+  &-right
+    position: relative
+    margin-top: 51px
+    display: flex
+    justify-content: center
+    flex: 1
+    img
+      z-index: 2
+      margin: auto 0
+      @media (min-width: 1920px)
+        width: 730px
+
+
+.banner
+  position: relative
+  z-index: -1
+  display: flex
+  justify-content: space-between
+  margin-top: 139px
+  padding: 100px 120px 176px
+  background: $primary
+  &-elm
+    display: flex
+    img
+      width: 80px
+      height: 80px
+      margin-right: 24px
+      @media (min-width: 1920px)
+        width: 106px
+        height: 106px
+    &-text
+      p
+        color: $gray5
+
+
+.why-choose
+  position: relative
+  display: flex
+  margin: 0 120px
+  padding-bottom: 100px
+  @media (max-width: 1280px)
+    margin: 0 60px
+  &-img
+    flex: 2
+    width: 598px
+    @media (min-width: 1920px)
+      width: 797px
+  &-text
+    flex: 1.5
+    display: flex
+    flex-direction: column
+    justify-content: center
+    p
+      margin: 24px 96px 32px 0
+      line-height: 35px
+      color: $gray5
+      @media (min-width: 1920px)
+        padding-right: 96px
+
+
+.check-earn
+  &-top
+    height: 196px
+    padding: 100px 0 219px
+    h2, p
+      text-align: center
+    p
+      margin: 24px 30% 0
+      color: $gray5
+  &-middle
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &-form, &-text
+      position: absolute
+      width: 60%
+      margin-left: 20%
+      background: white
+    &-form
+      display: flex
+      justify-content: space-between
+      border-radius: 16px 16px 0 0
+      padding-top: 48px
+      height: 155px
+      top: -150px
+      background-color: #FBFCFE
+      .input-form, .select-form
+        margin-top: 14px
+      .input-form
+        margin-left: 48px
+      button
+        margin-right: 48px
+    &-text
+      border-radius: 0 0 16px 16px
+      top: 0
+      h3, span, p
+        padding-left: 48px
+      h3
+        color: $accent
+        margin-bottom: 16px
+        padding-top: 48px
+        font-weight: 500
+      span
+        font-family: Rubik, serif
+        font-size: 32px
+        font-weight: bold
+        color: black
+        strong
+          color: $accent
+      p
+        margin-top: 20px
+        padding-bottom: 48px
+        color: $gray3
+  &-bottom
+    @include light-bg
+    width: 100%
+    padding-top: 316px
+    h2
+      color: $primary
+      text-align: center
+      margin: 0 24%
+      padding-bottom: 64px
+    &-cnt
+      display: flex
+      margin: 0 120px
+      padding-bottom: 100px
+      div
+        flex: 1
+    &-elm
+      display: flex
+      flex-direction: column
+      background: white
+      padding: 48px 24px
+      border-radius: 16px
+      transition: .2s
+      &:hover
+        transition: .3s
+        background: $secondary
+        cursor: default
+        & > a > span
+          transition: .3s .2s
+          width: 150px
+          animation: btn-anim .3s .2s forwards
+          @media (max-width: 1750px)
+            width: 100px
+        & > a > img
+          transition: .3s .2s
+          margin-left: 24px
+        *
+          color: white
+      .title
+        display: flex
+        justify-content: center
+        h3
+          margin-right: 8px
+          font-weight: bold !important
+        p
+          position: relative
+          top: 10%
+          color: $gray4
+          padding-bottom: 64px
+      .description
+        text-align: center
+        margin-bottom: 35px
+      .logo-crypto
+        margin: 0 auto
+        padding-bottom: 48px
+        height: 80px
+        width: 80px
+        @media (min-width: 1920px)
+          height: 106px
+          width: 106px
+      a
+        margin: 0 auto
+        overflow: hidden
+        justify-content: space-between
+        img
+          margin-left: 0
+        span
+          transition: .2s
+          transform-origin: left
+          white-space: nowrap
+          transform: translateX(-200px)
+          width: 0
+          height: auto
+    .margin
+      margin: 0 48px
+
+
+.details
+  overflow: hidden
+  position: relative
+  background: $secondary
+  h2
+    text-align: center
+    padding: 100px 23%
+  &-slider-cnt
+    margin: 100px 13%
+  &-slider
+    display: flex
+    justify-content: space-between
+    &-text
+      margin: auto 0
+      h3, p
+        color: white
+      h3
+        font-size: 34px
+        @media (min-width: 1920px)
+          font-size: 42px
+      p
+        margin: 24px 0 32px
+    img
+      max-width: 60%
+    &-one
+      img
+        margin-left: 18%
+    &-two
+      margin: 120px 0
+      img
+        margin-right: 11%
+    &-three
+      img
+        position: relative
+        z-index: 1
+        margin-left: 9%
+        height: 100%
+
+
+@keyframes btn-anim
+  from
+    height: 0
+    visibility: hidden
+
+  to
+    visibility: visible
+    transform: translateX(0px)
+
+.circle-big
+  position: absolute
+  width: 686px
+  height: 686px
+  border-radius: 100%
+  &-normal
+    left: 151px
+    top: -400px
+    background: linear-gradient(150deg, rgba(white, .18), rgba(white, 0))
+  &-nd
+    bottom: -343px
+    right: -343px
+    background: linear-gradient(0deg, rgba(white, .18), rgba(white, 0))
+.circle
+  position: absolute
+  top: 234px
+  right: -60px
+  width: 260px
+  height: 130px
+  border-radius: 130px 130px 0 0
+  background: linear-gradient(250deg, rgba(white, .08) 0%, rgba(#35068C, .01) 100%)
+  transform: rotate(150deg)
+
+.demi-circle
+  position: absolute
+  top: 810px
+  right: -20px
+
+.effect-back
+  z-index: 0
+  position: absolute
+  height: 120px
+  width: 997px
+  left: 50%
+  top: 50%
+  transform: rotate(149deg)
+  transform-origin: left
+  background: linear-gradient(to left, rgba(white, 0), rgba(white, .04), rgba(white, 0))
+  @media (min-width: 1302px)
+    width: 1302px
+  &-nd
+    left: 143%
+    top: 42%
+    z-index: -2
+  &-reverse
+    top: 0px
+    left: 500px
+  &-footer
+    top: 0
+    left: 20%
+    transform: rotate(50deg)
+    &-nd
+      left: 40%

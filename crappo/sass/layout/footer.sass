@@ -1,0 +1,98 @@
+@import '../utils/variables'
+
+footer
+  position: relative
+  background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 70%)
+  padding-top: 88px
+  .start-now
+    position: relative
+    display: flex
+    justify-content: space-between
+    margin: 88px 13%
+    padding: 48px
+    background-color: #3671E9
+    border-radius: 16px
+    .eth-img
+      position: absolute
+      top: 0
+    .btc-img
+      position: absolute
+      right: 0
+      bottom: 0
+    h3, p, label
+      color: white
+    h3
+      font-size: 32px
+      margin-bottom: 16px
+      @media (min-width: 1920px)
+        font-size: 40px
+    &-text
+      margin-right: 190px
+      @media (max-width: 1582px)
+        margin-right: 50px
+    &-form
+      display: flex
+      margin: auto 0
+      input, label
+        border-color: white
+        &:focus
+          color: white
+          border-color: white
+      input
+        width: 430px
+      a
+        position: relative
+        bottom: 15px
+        margin-left: 40px
+  nav
+    position: relative
+    padding: 80px 13%
+    background-color: $primary
+    *
+      color: white
+    .top
+      display: flex
+      justify-content: space-between
+      width: 100%
+      margin-bottom: 120px
+      .logo
+        display: flex
+        height: 40px
+        margin-right: 11.8%
+        span
+          margin: auto 0 auto 16px
+          font-family: Inter, serif
+          font-size: 20px
+          font-weight: bold
+      .list-link
+        display: flex
+        flex-direction: column
+        .title, a
+          white-space: nowrap
+        .title
+          margin-bottom: 24px
+        a
+          font-family: Rubik, serif
+          font-size: 18px
+          line-height: 40px
+        &-margin
+          margin-right: 9.2%
+      .payment
+        width: fit-content
+        padding-left: 7.2%
+        max-width: 25%
+        img:hover
+          cursor: pointer
+        p
+          font-size: 32px
+          margin-bottom: 40px
+        &-list
+          display: flex
+          justify-content: space-between
+    .bottom
+      display: flex
+      justify-content: space-between
+      div
+        display: flex
+        a
+          margin: auto 16px
