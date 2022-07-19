@@ -345,6 +345,11 @@ body {
 .details-slider img {
   max-width: 60%;
 }
+@media (max-width: 1350px) {
+  .details-slider img {
+    max-width: 50%;
+  }
+}
 .details-slider-one img {
   margin-left: 18%;
 }
