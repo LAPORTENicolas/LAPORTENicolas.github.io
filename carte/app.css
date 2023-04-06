@@ -1,0 +1,182 @@
+* {
+  font-family: "Bodoni Moda", serif;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  margin-top: 50px;
+  background-color: #01142E;
+}
+
+.spacer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px 0;
+}
+.spacer-line {
+  background-color: #EBDE88;
+  width: 40%;
+  height: 3px;
+  border-radius: 5px;
+}
+.spacer-inital {
+  background-color: #EBDE88;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+}
+
+header .title {
+  display: flex;
+  justify-content: center;
+}
+header .title img:nth-child(3) {
+  transform: rotateY(180deg);
+}
+header .title h1 {
+  margin: auto 0;
+  font-size: 2.75em;
+  color: white;
+}
+header .header ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+header .header ul li {
+  list-style: none;
+}
+header .header ul li a {
+  color: white;
+  text-decoration: none;
+}
+header .header ul li a:hover {
+  color: #EBDE88;
+  transition: 0.2s;
+}
+header .header ul .header-spacer {
+  background-color: #EBDE88;
+  width: 2px;
+  margin: 0 10px;
+}
+
+#carrousel {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+}
+#carrousel .left, #carrousel .right {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 158px;
+}
+#carrousel .left, #carrousel .right {
+  width: 370px;
+  overflow: hidden;
+}
+#carrousel .left img, #carrousel .right img {
+  width: 370px;
+}
+#carrousel .left .leftBlock, #carrousel .left .rightBlock, #carrousel .right .leftBlock, #carrousel .right .rightBlock {
+  display: flex;
+  position: absolute;
+  left: 370px;
+  animation: 14s test alternate infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes test {
+  from {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -370px;
+  }
+  45% {
+    left: -370px;
+  }
+  50% {
+    left: -740px;
+  }
+  70% {
+    left: -740px;
+  }
+  75% {
+    left: -1110px;
+  }
+  90% {
+    left: -1110px;
+  }
+  95% {
+    left: -1480px;
+  }
+  to {
+    left: -1480px;
+  }
+}
+@keyframes transitionReverse {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+.section-product {
+  margin: 0 30%;
+  color: white;
+}
+.section-product .spacer {
+  margin: 10px 0 10px 0;
+  width: 100%;
+}
+.section-product h2 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.section-product .list-products .title-cat {
+  font-weight: 400;
+  margin: 10px 0;
+  text-align: center;
+}
+.section-product .list-products .product {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.section-product .list-products .productMarge {
+  margin-bottom: 9px;
+}
+.section-product p, .section-product span {
+  line-height: 100%;
+}
+.section-product p {
+  margin: 1px 0;
+}
+.section-product span {
+  position: relative;
+  font-style: italic;
+  top: -9px;
+  font-size: 80%;
+  margin-top: 0;
+}
+
+@media (min-width: 426px) and (max-width: 1025px) {
+  .section-product {
+    margin: 0 10%;
+  }
+}
+@media (max-width: 426px) {
+  p {
+    font-size: 500px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
